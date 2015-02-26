@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SlidingDoor</string>
+    <string name="top">向下滑动进入首页</string>
+    <string name="bottom">向上滑动进入首页</string>
+    <string name="left">向右滑动进入首页</string>
+    <string name="right">向左滑动进入首页</string>
+    <string name="url">从网络获取图片</string>
+    <string name="save">保存图片到本地</string>
+
+</resources>
