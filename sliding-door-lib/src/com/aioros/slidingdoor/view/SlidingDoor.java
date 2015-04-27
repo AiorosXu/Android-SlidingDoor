@@ -317,7 +317,7 @@ public class SlidingDoor extends RelativeLayout
 									defaultDuration);
 							slidingdoorState = true;
 						}
-						else if (Math.abs(differenceX) > windowWidth / 4)
+						else if (differenceX>0&&Math.abs(differenceX) > windowWidth / 4)
 						{
 							smoothScroll(SlidingDoor.this.getScrollX(), 0, -windowWidth, 0, defaultDuration);
 							visibleFlag = false;
@@ -339,7 +339,7 @@ public class SlidingDoor extends RelativeLayout
 									defaultDuration);
 							slidingdoorState = true;
 						}
-						else if (Math.abs(differenceX) > windowWidth / 4)
+						else if (differenceX<0&&Math.abs(differenceX) > windowWidth / 4)
 						{
 							smoothScroll(SlidingDoor.this.getScrollX(), 0, windowWidth, 0, defaultDuration);
 							visibleFlag = false;
@@ -361,7 +361,7 @@ public class SlidingDoor extends RelativeLayout
 									defaultDuration);
 							slidingdoorState = true;
 						}
-						else if (Math.abs(differenceY) > windowHeigh / 4)
+						else if (differenceY<0&&Math.abs(differenceY) > windowHeigh / 4)
 						{
 							smoothScroll(0, SlidingDoor.this.getScrollY(), 0, -windowHeigh, defaultDuration);
 							visibleFlag = false;
@@ -384,7 +384,7 @@ public class SlidingDoor extends RelativeLayout
 							slidingdoorState = true;
 							break;
 						}
-						else if (Math.abs(differenceY) > windowHeigh / 4)
+						else if (differenceY>0&&Math.abs(differenceY) > windowHeigh / 4)
 						{
 							smoothScroll(0, SlidingDoor.this.getScrollY(), 0, windowHeigh, defaultDuration);
 							visibleFlag = false;
